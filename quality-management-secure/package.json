@@ -1,14 +1,26 @@
 {
-  "name": "vite_react_shadcn_ts",
-  "private": true,
-  "version": "0.0.0",
+  "name": "q-track-quality-management",
+  "private": false,
+  "version": "0.1.0",
   "type": "module",
+  "license": "MIT",
+  "author": "zeus42141-afk",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zeus42141-afk/QMS.git",
+    "directory": "quality-management-secure"
+  },
+  "engines": {
+    "node": ">=18"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "build:dev": "vite build --mode development",
-    "lint": "eslint .",
-    "preview": "vite preview"
+    "lint": "eslint . --ext .ts,.tsx,.js,.jsx",
+    "preview": "vite preview",
+    "format": "prettier --write .",
+    "test": "echo \"No tests configured\" && exit 0"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",
@@ -82,6 +94,7 @@
     "tailwindcss": "^3.4.11",
     "typescript": "^5.5.3",
     "typescript-eslint": "^8.0.1",
-    "vite": "^5.4.1"
+    "vite": "^5.4.1",
+    "prettier": "^3.0.0"
   }
 }
